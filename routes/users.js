@@ -8,7 +8,7 @@ require('dotenv').config();
 
 router.get('/', async (req, res) => {
   try {
-    const [users] = await db.query('SELECT id, username, email, created_at FROM users');
+    const [users] = await db.query('SELECT id, username, email, FROM users');
     res.json(users);
   } catch (error) {
     res.status(500).json({ message: 'Erreur serveur', error });

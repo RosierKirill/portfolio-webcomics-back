@@ -12,7 +12,7 @@ db.getConnection()
   .then(() => console.log('Connexion à la base de données réussie !'))
   .catch(err => {
     console.error('Erreur de connexion à la base de données :', err.message);
-    process.exit(1); // stop le serveur si ça coince
+    process.exit(1); 
   });
 
 module.exports = db;
